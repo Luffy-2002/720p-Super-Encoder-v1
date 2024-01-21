@@ -91,7 +91,7 @@ async def incoming_start_message_f(bot, update):
                 ]
             ]
         ),
-        disable_web_page_preview=True,
+        reply_to_message_id=update.id,
     )
     
 async def incoming_compress_message_f(update):
